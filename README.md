@@ -1,25 +1,29 @@
 # 🧀🍰 CheeseCake Clicker
 
-**CheeseCake Clicker** est un jeu de type *clicker* où l'objectif est simple : produire un maximum de cheesecakes ! Cliquez et améliorez vos équipements!
+**CheeseCake Clicker** is a *clicker* type game where the objective is simple: produce as many cheesecakes as possible! Click and upgrade your equipment!
 
 ---
 
-## 🚀 Fonctionnalités
+## 🚀 Features
 
-- **Cliquez pour gagner** : Produisez des cheesecakes à chaque clic.
-- **Système d'améliorations** : Achetez des outils et des ingrédients pour augmenter votre production.
-- **Progression illimitée** : Plus vous cliquez, plus vous gagnez de points et débloquez de nouvelles fonctionnalités.
+- **Click to win**: Produce cheesecakes with every click.
+- **Upgrade system**: Buy tools and ingredients to increase your production.
+- **Unlimited progression**: The more you click, the more points you earn and unlock new features.
 
 ---
 
-## 🎮 Comment jouer ?
+## 🎮 How to play?
 
-1. **Lancez le jeu**.
-2. Cliquez sur le bouton **"Fabriquer un Cheesecake"** pour produire des cheesecakes.
-3. Utilisez vos points pour acheter des améliorations et multiplier votre production.
-4. Relevez des défis et atteignez de nouveaux records !
+1. **Launch the game**.
+2. Click the **"Make Cheesecake"** button to produce cheesecakes.
+3. Use your points to purchase upgrades and multiply your production.
+4. Take on challenges and reach new records!
 
 ---
 
 ## 📦 Installation
-Pas encore disponible
+[Download the apk here](https://github.com/Maelus-999/CheeseCakeClicker/releases/tag/B%C3%AAta)
+then click on the file once downloaded to install it
+
+## ⛑️ Major Issue in Beta Version v2.0
+- Language available only French (For other languages ​​wait for the next update)
