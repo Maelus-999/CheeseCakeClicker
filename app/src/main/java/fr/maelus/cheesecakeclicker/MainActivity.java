@@ -54,11 +54,10 @@ public class MainActivity extends AppCompatActivity {
 
         int requiredCheesecakesForNextCheckpoint = 100 * pointsPerClick;
 
-        // Si les points atteignent un palier
         if (currentPoints >= requiredCheesecakesForNextCheckpoint + (lastSavedHundred * 100)) {
             saveGameState(currentPoints);
             lastSavedHundred = currentPoints / 100;
-                Toast.makeText(this, "Palier atteint ! Points sauvegardés : " + currentPoints, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.lvlPass) +  " " + getString(R.string.savedPoints) + " " + currentPoints, Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -77,9 +76,9 @@ public class MainActivity extends AppCompatActivity {
 
             saveGameState(currentPoints);
             points.setText(String.valueOf(currentPoints));
-            Toast.makeText(this, "Points par clic augmentés à " + pointsPerClick + " ! Vous avez perdu " + costToUpgrade + " points.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.PointPerClickUpgraded) + " "+ pointsPerClick + " ! " + getString(R.string.YouLoose) + " " + costToUpgrade + " " + getString(R.string.points), Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(this, "Pas assez de points pour l'amélioration!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.NotEnoughPoints), Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -89,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         int currentHundred = currentPoints / 100;
         lastSavedHundred = currentHundred;
         saveGameState(currentPoints);
-        Toast.makeText(this, "Points sauvegardés : " + currentPoints, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.savedPoints) + " " + currentPoints, Toast.LENGTH_SHORT).show();
     }
 
     private void saveGameState(int points) {

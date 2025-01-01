@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lvlPass">"Vlak bereik!"</string>
+    <string name="Save">"Stoor"</string>
+    <string name="points">"Punte"</string>
+    <string name="PointPerClickUpgraded">"Punte per klik verhoog na "</string>
+    <string name="YouLoose">"Jy het verloor"</string>
+    <string name="NotEnoughPoints">"Nie genoeg punte vir opgradering nie!"</string>
+    <string name="savedPoints">"Bewaarde punte:"</string>
+    <string name="cost">"kos :"</string>
+    <string name="upgrade1Descr">"Voeg punte by vir elke klik"</string>
+</resources>

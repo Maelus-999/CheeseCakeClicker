@@ -1,4 +1,13 @@
 <resources>
-    <string name="app_name">CheeseCakeClicker</string>
-    <string name="app_version">Alpha 2.0</string>
+    <string name="app_name" translatable="false">CheeseCake Clicker</string>
+    <string name="app_version" translatable="false">Alpha 2.1</string>
+    <string name="lvlPass">Milestone reached!</string>
+    <string name="Save">Save </string>
+    <string name="points">Points</string>
+    <string name="PointPerClickUpgraded">Points per click increased to</string>
+    <string name="YouLoose">You lost </string>
+    <string name="NotEnoughPoints">"Not enough points for the upgrade!"</string>
+    <string name="savedPoints">"Saved points :"</string>
+    <string name="cost">"cost :"</string>
+    <string name="upgrade1Descr">Add points for Each Click</string>
 </resources>

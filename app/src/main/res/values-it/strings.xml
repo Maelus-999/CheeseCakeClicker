@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lvlPass">"Livello raggiunto !"</string>
+    <string name="Save">"Salva"</string>
+    <string name="points">"Punti"</string>
+    <string name="PointPerClickUpgraded">"Punti per clic aumentati a "</string>
+    <string name="YouLoose">"Hai perso"</string>
+    <string name="NotEnoughPoints">"Non hai abbastanza punti per l'upgrade !"</string>
+    <string name="savedPoints">"Punti salvati :"</string>
+    <string name="cost">"costa :"</string>
+    <string name="upgrade1Descr">"Aggiungi punti per ogni clic"</string>
+</resources>

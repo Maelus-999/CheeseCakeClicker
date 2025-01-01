@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lvlPass">"レベル達成！"</string>
+    <string name="Save">"保存"</string>
+    <string name="points">"ポイント"</string>
+    <string name="PointPerClickUpgraded">"クリックごとのポイントが増加しました "</string>
+    <string name="YouLoose">"あなたは負けました"</string>
+    <string name="NotEnoughPoints">"アップグレードに必要なポイントが足りません！"</string>
+    <string name="savedPoints">"保存されたポイント："</string>
+    <string name="cost">"費用："</string>
+    <string name="upgrade1Descr">"クリックごとにポイントを追加"</string>
+</resources>

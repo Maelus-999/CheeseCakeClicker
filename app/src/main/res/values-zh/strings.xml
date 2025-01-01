@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lvlPass">"关卡达成！"</string>
+    <string name="Save">"保存"</string>
+    <string name="points">"积分"</string>
+    <string name="PointPerClickUpgraded">"每次点击积分增加至 "</string>
+    <string name="YouLoose">"你输了"</string>
+    <string name="NotEnoughPoints">"积分不足，无法升级！"</string>
+    <string name="savedPoints">"已保存积分："</string>
+    <string name="cost">"花费："</string>
+    <string name="upgrade1Descr">"每次点击增加积分"</string>
+</resources>
