@@ -7,7 +7,7 @@
 ## 🚀 Features
 
 - **Click to win**: Produce cheesecakes with every click.
-- **Upgrade system**: Buy tools and ingredients to increase your production.
+- **Upgrade system**: Buy tools to increase your production.
 - **Unlimited progression**: The more you click, the more points you earn and unlock new features.
 
 ---
