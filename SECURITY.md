@@ -6,7 +6,7 @@ Here are the versions on which we still resolve the Vulnerability or bugs
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 2.x   | :white_check_mark: |
+| beta 2.x   | :white_check_mark: |
 
 ## Reporting a Vulnerability or bugs
 
