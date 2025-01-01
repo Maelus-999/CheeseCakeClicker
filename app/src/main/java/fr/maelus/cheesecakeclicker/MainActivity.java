@@ -16,6 +16,9 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String PREFS_NAME = "PlayerPrefs";
     private static final String PLAYER_POINTS_KEY = "PlayerPoints";
+    private static final String POINTS_PER_CLICK_KEY = "PointsPerClick";
+    private int pointsPerClick = 1;
+    private int lastSavedHundred = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +27,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         SharedPreferences sharedPreferences = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
-        int savedPoints = sharedPreferences.getInt(PLAYER_POINTS_KEY, 0); // Valeur par défaut : 0
+
+        int savedPoints = sharedPreferences.getInt(PLAYER_POINTS_KEY, 0);
+        pointsPerClick = sharedPreferences.getInt(POINTS_PER_CLICK_KEY, 1);
+        lastSavedHundred = sharedPreferences.getInt("LastSavedHundred", 0);
+
         TextView points = findViewById(R.id.points);
         points.setText(String.valueOf(savedPoints));
+
+        TextView pointsPerClickTxt = findViewById(R.id.costPointPerEachClickTxt);
+        pointsPerClickTxt.setText(String.valueOf(50 * pointsPerClick));
+
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -37,24 +49,57 @@ public class MainActivity extends AppCompatActivity {
 
     public void addPoint(View view) {
         TextView points = findViewById(R.id.points);
-        int currentPoints = Integer.parseInt(points.getText().toString()) + 1;
+        int currentPoints = Integer.parseInt(points.getText().toString()) + pointsPerClick;
         points.setText(String.valueOf(currentPoints));
 
-        if (currentPoints % 100 == 0) {
-            savePlayerPoints(currentPoints);
-            Toast.makeText(this, "Palier atteint ! Points sauvegardés : " + currentPoints, Toast.LENGTH_SHORT).show();
+        int requiredCheesecakesForNextCheckpoint = 100 * pointsPerClick;
+
+        // Si les points atteignent un palier
+        if (currentPoints >= requiredCheesecakesForNextCheckpoint + (lastSavedHundred * 100)) {
+            saveGameState(currentPoints);
+            lastSavedHundred = currentPoints / 100;
+                Toast.makeText(this, "Palier atteint ! Points sauvegardés : " + currentPoints, Toast.LENGTH_SHORT).show();
         }
     }
+
+    public void incrementPointsPerClick(View view) {
+        TextView points = findViewById(R.id.points);
+        int currentPoints = Integer.parseInt(points.getText().toString());
+
+        int costToUpgrade = 100 * pointsPerClick;
+
+        if (currentPoints >= costToUpgrade) {
+            currentPoints -= costToUpgrade;
+            pointsPerClick += 1;
+
+            TextView pointsPerClickTxt = findViewById(R.id.costPointPerEachClickTxt);
+            pointsPerClickTxt.setText(String.valueOf(100 * pointsPerClick));
+
+            saveGameState(currentPoints);
+            points.setText(String.valueOf(currentPoints));
+            Toast.makeText(this, "Points par clic augmentés à " + pointsPerClick + " ! Vous avez perdu " + costToUpgrade + " points.", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "Pas assez de points pour l'amélioration!", Toast.LENGTH_SHORT).show();
+        }
+    }
+
     public void savePPoints(View view) {
         TextView points = findViewById(R.id.points);
         int currentPoints = Integer.parseInt(points.getText().toString());
-        savePlayerPoints(Integer.parseInt(String.valueOf(currentPoints)));
+        int currentHundred = currentPoints / 100;
+        lastSavedHundred = currentHundred;
+        saveGameState(currentPoints);
         Toast.makeText(this, "Points sauvegardés : " + currentPoints, Toast.LENGTH_SHORT).show();
     }
-    private void savePlayerPoints(int points) {
+
+    private void saveGameState(int points) {
         SharedPreferences sharedPreferences = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
+
         editor.putInt(PLAYER_POINTS_KEY, points);
+        editor.putInt(POINTS_PER_CLICK_KEY, pointsPerClick);
+        editor.putInt("LastSavedHundred", lastSavedHundred);
+
         editor.apply();
     }
 }
