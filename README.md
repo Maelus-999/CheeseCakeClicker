@@ -25,5 +25,3 @@
 [Download the apk here](https://github.com/Maelus-999/CheeseCakeClicker/releases/tag/B%C3%AAta)
 then click on the file once downloaded to install it
 
-## ⛑️ Major Issue in Beta Version v2.0
-- Language available only French (For other languages ​​wait for the next update)
