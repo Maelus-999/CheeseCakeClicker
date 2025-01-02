@@ -18,6 +18,7 @@
 2. Click the **"Cheesecake"** button to produce cheesecakes.
 3. Use your points to purchase upgrades and multiply your production.
 4. Take on challenges and reach new records!
+5. No microtransactions, no advertising because it is a non-profit project
 
 ---
 
