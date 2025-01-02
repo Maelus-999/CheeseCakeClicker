@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         points.setText(String.valueOf(savedPoints));
 
         TextView pointsPerClickTxt = findViewById(R.id.costPointPerEachClickTxt);
-        pointsPerClickTxt.setText(String.valueOf(50 * pointsPerClick));
+        pointsPerClickTxt.setText(String.valueOf(100 * pointsPerClick));
 
 
 
