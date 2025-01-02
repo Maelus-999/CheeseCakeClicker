@@ -3,7 +3,7 @@
 **CheeseCake Clicker** is a *clicker* type game where the objective is simple: produce as many cheesecakes as possible! Click and upgrade your equipment!
 ---
 ## ✨ Next Update
-(Here is the notion for see the next update)[https://www.notion.so/16f59f7e4a738057abc4e85b23de54c5?v=16f59f7e4a738016bb39000c7e5beab7&pvs=4]
+[Here is the notion for see the next update](https://www.notion.so/16f59f7e4a738057abc4e85b23de54c5?v=16f59f7e4a738016bb39000c7e5beab7&pvs=4)
 ---
 ## 🚀 Features
 
