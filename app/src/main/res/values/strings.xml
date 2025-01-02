@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name" translatable="false">CheeseCake Clicker</string>
-    <string name="app_version" translatable="false">Alpha 2.1</string>
+    <string name="app_version" translatable="false">Alpha 2.1.1</string>
     <string name="lvlPass">Milestone reached!</string>
     <string name="Save">Save </string>
     <string name="points">Points</string>
