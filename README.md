@@ -22,6 +22,6 @@
 ---
 
 ## 📦 Installation
-[Download the apk here](https://github.com/Maelus-999/CheeseCakeClicker/releases/tag/B%C3%AAta](https://github.com/Maelus-999/CheeseCakeClicker/releases/tag/v2.1-beta)
+[Download the apk here](https://github.com/Maelus-999/CheeseCakeClicker/releases/tag/v2.1-beta)
 then click on the file once downloaded to install it
 
